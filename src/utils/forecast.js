@@ -16,7 +16,7 @@ const forecast = (latitude, longitude, cb) => {
             return;
         }
 
-        const weatherForecast = body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + ' degrees out. The wind speed is  ' + body.current.wind_speed + ' km/h and humidity is at ' + body.current.humidity + '%.';
+        const weatherForecast = body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + ' degrees out. The wind speed is ' + body.current.wind_speed + ' km/h and humidity is at ' + body.current.humidity + '%.';
         cb(undefined, weatherForecast);
 
     })
